@@ -607,3 +607,118 @@ body {
     padding: 24px 20px 26px;
   }
 }
+/* =========================
+   PAGE PROJETS
+   ========================= */
+
+.projects-hero {
+  background: radial-gradient(circle at top left, #ffffff 0, #f3f2ef 55%);
+}
+
+.projects-title {
+  font-size: clamp(28px, 3.8vw, 34px);
+  line-height: 1.2;
+  font-family: var(--font-serif);
+}
+
+.projects-pill-filter {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.projects-pill-filter span {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(22, 58, 124, 0.06);
+  border: 1px solid rgba(22, 58, 124, 0.2);
+  font-size: 12px;
+  color: var(--accent);
+}
+
+.projects-section {
+  background: var(--bg-body);
+}
+
+.projects-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  padding: 24px 22px 26px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+.project-header h2 {
+  margin: 0 0 4px;
+  font-size: 20px;
+  font-family: var(--font-serif);
+}
+
+.project-location {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.project-intro {
+  margin: 14px 0 12px;
+  font-size: 14px;
+  color: var(--text-main);
+}
+
+.project-points {
+  margin: 0 0 14px 18px;
+  padding: 0;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.project-points li {
+  margin-bottom: 4px;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-tag {
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(227, 213, 197, 0.18);
+  border: 1px solid rgba(227, 213, 197, 0.7);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+/* Responsive spécifique projets */
+@media (max-width: 700px) {
+  .project-card {
+    padding: 20px 18px 22px;
+  }
+}
